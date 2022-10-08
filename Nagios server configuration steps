@@ -7,23 +7,23 @@ we have to define remote NRPE in Nagios server 4.3
 We have to define remote NRPE In Ubuntu 18.04 Nagios server under nagios installed location that is /usr/local/nagios/etc/objects & /usr/local/nagios/etc/servers for windows and linux servers
 eg as below
 for windows we have to use wincows.cfg
-datamatics@TJ-LP-140:/usr/local/nagios/etc/objects$ ls
+datapoint@comp-140:/usr/local/nagios/etc/objects$ ls
 bakcommands.cfg  commands.cfg  localhost.cfg  switch.cfg     timeperiods.cfg  windows.cfg-bkp
 bakcontacts.cfg  contacts.cfg  printer.cfg    templates.cfg  windows.cfg      windows.cfg-old
 
 
-datamatics@TJ-LP-140:/usr/local/nagios/etc/servers$ cat client.itzgeek.local.cfg
+datapoint@comp-140:/usr/local/nagios/etc/servers$ cat client.itzgeek.local.cfg
 for Linux we have to clinet.itzgeek.local.cfg finle user /usr/local/nagios/etc/servers in Nagios server
 define host{
 use                     linux-server
-host_name               itshare
+host_name               codeshare
 alias                   itshare
-address                 192.168.124.125
+address                 192.168.xx.xx
 }
 define hostgroup{
 hostgroup_name          linux-server
 alias                   Linux Servers
-members                 itshare
+members                 codeshare
 
 
 Important point:After made any changes in configuration file don't forget to check config file before restart the servcie(Nagios) in the server.
