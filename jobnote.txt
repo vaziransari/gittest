@@ -1,0 +1,52 @@
+Welcome to Newtech computer services pvt LTD
+
+1) A lot can happen before the sun comes up.
+
+
+I learned most of what I know about coding and computer science between 5:30am and 8am. My sister tells me, “Everyone hates morning people,” and she’s probably right, but morning discipline made the career transition possible.
+2) Everything is learnable.
+
+Part of wanting to learn to code was wanting to tackle something that, for me, felt unlearnable. Making progress piece by piece helped me feel that learning mostly requires dedication, enough time, and good teachers/resources (though, to be fair, I haven’t tried learning “everything,” so can’t know for sure!).
+3) There are bad questions.
+
+What makes a question bad is not what gets asked, but how. A good question makes it easy for someone to help you — it comes packaged with appropriate context and with possible solutions considered. Bad questions happen when, a) the asker hasn’t isolated what precisely they’re trying to figure out, and/or b) the asker hasn’t brainstormed solutions on their own before seeking help.
+4) We stand on the shoulders of giants.
+
+One of the coolest things about coding is how tightly your work depends on the work of hardware and software engineers who have come before you. Nothing has given me so much faith in the power of incremental improvement, or the idea of an overarching progress narrative, as coding has.
+5) Even so, a lot can go wrong.
+
+Every codebase and computer architecture is vast — there are thousands upon thousands of parts, some hardware, some software, and only a minuscule number of them were constructed by you, no matter how prolific you are. Think of the Spectre and Meltdown vulnerabilities discovered earlier this year — they happened at the chip level, and thus affected pretty much every modern computer, and have been underlying all of our tech for years! There’s just no way to protect against that. As customers and as coders, we can’t assume systems are secure or unhackable (though, as coders, we’re obligated to do our best diligence on the tech we’re using and the tech we’re creating).
+6) You can make progress despite confusion.
+
+It’s hard to communicate how much of my coding time is spent feeling utterly baffled about what to do next. And yet, somehow, things get done. Doctorow describes writing as “driving a car at night. You can see only as far as your headlights, but you can make the whole trip that way.” I feel this somewhat with writing, and very acutely with coding.
+7) Personality is comfort-zone dependent.
+
+It was wild to watch my personality shift the further I strayed from anything familiar. Surely this manifests differently in everyone, but I’ve watched myself become more shy and quiet, closer to how I behaved as a little kid (and pretty far from how I think of myself as an adult). I see personality and confidence as interdependent now — something I’d never considered before.
+8) It takes more than a year to feel comfortable.
+
+I feel uncomfortable most days.
+9) It’s never just you.
+
+It takes a village to embark on anything hard, and I’m unbelievably grateful to mine. Here’s to
+Andy Coravos
+,
+Irene Chen
+, Ramsey Fahs,
+Faye Hayes
+, Andrea Scott,
+Josh Leichtung
+,
+Dillon Arevalo
+,
+Kenneth Rettberg
+, Mark Stewart,
+Jennifer Gilbert
+,
+John-Michael Murphy
+,
+Zack Field
+,
+charlyn g
+, Joe Zhou,
+Josiah Grace
+, and so many others. Without their encouragement, their belief that I could become technical, I maybe never would have
