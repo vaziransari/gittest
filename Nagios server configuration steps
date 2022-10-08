@@ -1,0 +1,93 @@
+NRPE Client configuration file/usr/local/nagios/etc/nrpe.cfg
+
+
+
+we have to define remote NRPE in Nagios server 4.3
+
+We have to define remote NRPE In Ubuntu 18.04 Nagios server under nagios installed location that is /usr/local/nagios/etc/objects & /usr/local/nagios/etc/servers for windows and linux servers
+eg as below
+for windows we have to use wincows.cfg
+datamatics@TJ-LP-140:/usr/local/nagios/etc/objects$ ls
+bakcommands.cfg  commands.cfg  localhost.cfg  switch.cfg     timeperiods.cfg  windows.cfg-bkp
+bakcontacts.cfg  contacts.cfg  printer.cfg    templates.cfg  windows.cfg      windows.cfg-old
+
+
+datamatics@TJ-LP-140:/usr/local/nagios/etc/servers$ cat client.itzgeek.local.cfg
+for Linux we have to clinet.itzgeek.local.cfg finle user /usr/local/nagios/etc/servers in Nagios server
+define host{
+use                     linux-server
+host_name               itshare
+alias                   itshare
+address                 192.168.124.125
+}
+define hostgroup{
+hostgroup_name          linux-server
+alias                   Linux Servers
+members                 itshare
+
+
+Important point:After made any changes in configuration file don't forget to check config file before restart the servcie(Nagios) in the server.
+
+
+At this point you've installed the check_nrpe plugin and addon host and service definitions for monitoring
+the remote Linux/Unix machine. Now its time to make those changes live...
+Verify your Nagios configuration files.
+
+# /usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg, if its ok the out put look as below
+
+agios Core 4.4.3
+Copyright (c) 2009-present Nagios Core Development Team and Community Contributors
+Copyright (c) 1999-2009 Ethan Galstad
+Last Modified: 2019-01-15
+License: GPL
+
+Website: https://www.nagios.org
+Reading configuration data...
+   Read main config file okay...
+   Read object config files okay...
+
+Running pre-flight check on configuration data...
+
+Checking objects...
+	Checked 20 services.
+	Checked 3 hosts.
+	Checked 3 host groups.
+	Checked 0 service groups.
+	Checked 1 contacts.
+	Checked 1 contact groups.
+	Checked 25 commands.
+	Checked 5 time periods.
+	Checked 0 host escalations.
+	Checked 0 service escalations.
+Checking for circular paths...
+	Checked 3 hosts
+	Checked 0 service dependencies
+	Checked 0 host dependencies
+	Checked 5 timeperiods
+Checking global event handlers...
+Checking obsessive compulsive processor commands...
+Checking misc settings...
+
+Total Warnings: 0
+Total Errors:   0
+
+Things look okay - No serious problems were detected during the pre-flight check
+=================================================================================
+Then  restart the nagios service
+systemctl restart nagios
+
+
+=================================================================================
+
+
+
+Have you tried clearing retention.dat? This would wipe out all current host and service status, all comments, downtime, etc. Essentially start with a clean state.
+
+> cd /usr/local/nagios/var
+> (optional) cp retention.dat retention.dat.backup
+> rm retention.dat
+> service nagios restart
+
+Edit: This should go in tandem with the other solutions here.. disable host checks first, THEN do a reset by clearing retention data. This may or may not get the host states where you want them, but they'll no longer be DOWN or throwing notifications
+
+
